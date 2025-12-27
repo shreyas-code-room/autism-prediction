@@ -175,7 +175,6 @@ streamlit run app.py
 
 **Shreyas B**
 MCA Graduate | Machine Learning & Full Stack Developer
-GitHub: [https://github.com/YOUR_USERNAME](https://github.com/shreyas-code-room)
 
 ---
 
