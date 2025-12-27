@@ -1,101 +1,187 @@
-# Autism Spectrum Disorder Prediction Model
+# 🧠 Autism Spectrum Disorder Prediction System
 
-## Project Overview
+## 📌 Overview
 
-This project develops a machine learning solution for early detection of Autism Spectrum Disorder (ASD) using multiple classification algorithms. By leveraging advanced data preprocessing and machine learning techniques, the model aims to provide a reliable screening tool for potential ASD identification.
+This project focuses on building a **Machine Learning–based system** to predict **Autism Spectrum Disorder (ASD)** using behavioral and demographic features. Early prediction of ASD can support timely clinical assessment and intervention.
 
-## Key Features
+The system evaluates multiple ML algorithms and compares their performance using standard classification metrics and confusion matrices.
 
-- Multiple Machine Learning Models:
-  - Logistic Regression
-  - XGBoost Classifier
-  - Support Vector Machine (SVM)
+---
 
-- Advanced Data Preprocessing:
-  - Feature engineering
-  - Age group categorization
-  - Log transformation
-  - Label encoding
-  - Feature scaling
+## 🎯 Objectives
 
-- Handling Class Imbalance:
-  - Random Over-Sampling technique to balance dataset
+* Analyze behavioral and screening data related to Autism
+* Train and evaluate multiple ML classification models
+* Compare model performance using accuracy and confusion matrices
+* Provide a reusable and extensible prediction pipeline
 
-- Interactive Streamlit Web Application:
-  - User-friendly interface
-  - Model selection
-  - Real-time ASD prediction
+---
 
+## 🛠️ Tech Stack
 
-## Installation
+* **Programming Language:** Python
+* **Libraries & Tools:**
 
-1. Clone the repository
+  * NumPy
+  * Pandas
+  * Scikit-learn
+  * XGBoost
+  * Matplotlib
+  * Joblib
+* **Environment:** Virtual Environment (venv)
+
+---
+
+## 📂 Project Structure
+
+```
+autism-prediction/
+│
+├── data/                          # Dataset files                  
+│
+├── app.py                         # Prediction / inference script
+├── train.py                       # Model training script
+├── requirements.txt               # Project dependencies
+├── readme.md                      # Project documentation
+├── .gitignore                     # Ignored files
+│
+├── confusion_matrix.png
+├── logistic_regression_confusion_matrix.png
+├── svm_confusion_matrix.png
+├── xgboost_confusion_matrix.png
+│
+├── ResultTesting.xlsx             # Testing results
+└── code.txt                       # Additional notes (optional)
+```
+
+---
+
+## 📊 Machine Learning Models Used
+
+* **Logistic Regression**
+* **Support Vector Machine (SVM)**
+* **XGBoost Classifier**
+
+Each model was trained and evaluated independently to identify the most accurate and reliable classifier for ASD prediction.
+
+---
+
+## 📈 Evaluation Metrics
+
+* Accuracy
+* Confusion Matrix
+* Model Comparison
+
+Confusion matrices for each model are saved as images:
+
+* Logistic Regression
+* SVM
+* XGBoost
+
+---
+
+## 📁 Dataset
+
+* Behavioral and demographic screening data for Autism prediction
+* Dataset includes features such as age, gender, behavioral responses, and screening scores
+* (Dataset source can be mentioned here if publicly available)
+
+---
+
+## 🚀 How to Run the Project
+
+### 1️⃣ Clone the Repository
+
 ```bash
-git clone https://github.com/yourusername/autism-prediction.git
+git clone https://github.com/YOUR_USERNAME/autism-prediction.git
 cd autism-prediction
 ```
 
-2. Create virtual environment
+### 2️⃣ Create Virtual Environment
+
 ```bash
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
 
-3. Install dependencies
+Activate:
+
+* **Windows**
+
+```bash
+venv\Scripts\activate
+```
+
+* **Linux / Mac**
+
+```bash
+source venv/bin/activate
+```
+
+---
+
+### 3️⃣ Install Dependencies
+
 ```bash
 pip install -r requirements.txt
 ```
 
-## Usage
+---
 
-### Training the Model
+### 4️⃣ Train Models
+
 ```bash
 python train.py
 ```
 
-### Running Streamlit App
+---
+
+### 5️⃣ Run Prediction
+
 ```bash
 streamlit run app.py
 ```
 
-## Model Performance Metrics
+---
 
-- Logistic Regression:
-  - Training AUC: ~0.85
-  - Validation AUC: ~0.80
+## 🧪 Results
 
-- XGBoost:
-  - Training AUC: ~0.90
-  - Validation AUC: ~0.85
+* Models were evaluated using unseen test data
+* Performance comparison shows variation across classifiers
+* XGBoost and SVM demonstrated strong predictive performance
 
-- Support Vector Machine:
-  - Training AUC: ~0.88
-  - Validation AUC: ~0.82
+(Refer to confusion matrix images for detailed analysis)
 
-## Dataset
+---
 
-The dataset includes various features related to:
-- Demographic information
-- Behavioral scores
-- Medical history
+## 🔍 Key Highlights
 
-## Preprocessing Techniques
+* End-to-end ML pipeline (data preprocessing → training → evaluation)
+* Multiple model comparison
+* Clean, modular code structure
+* Healthcare-focused AI application
 
-- Log transformation of age
-- Feature engineering
-- Label encoding
-- Standard scaling
-- Handling class imbalance
+---
 
-## Contributing
+## 🔮 Future Enhancements
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+* Integrate Flask web interface for real-time predictions
+* Deploy the application on cloud platforms (AWS / Render)
+* Add explainable AI (SHAP / LIME)
+* Expand dataset for improved generalization
 
-## License
+---
 
-[MIT]
+## 👤 Author
+
+**Shreyas B**
+MCA Graduate | Machine Learning & Full Stack Developer
+GitHub: [https://github.com/YOUR_USERNAME](https://github.com/YOUR_USERNAME)
+
+---
+
+## 📜 License
+
+This project is for educational and research purposes.
+
+---
 
