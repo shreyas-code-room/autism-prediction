@@ -1,0 +1,26 @@
+# Virtual Environment
+venv/
+pyvenv.cfg
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Environment variables
+.env
+
+# Model files
+*.joblib
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data archives
+*.zip
+
+# Logs
+*.log
+errorfile.text
+
+# OS
+.DS_Store
